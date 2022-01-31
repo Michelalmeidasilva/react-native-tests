@@ -1,7 +1,10 @@
 module.exports = {
   preset: "react-native",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-  setupFiles: ["./node_modules/react-native-gesture-handler/jestSetup.js"],
+  setupFiles: [
+    "./node_modules/react-native-gesture-handler/jestSetup.js",
+    "<rootDir>/jest/setup.js",
+  ],
   /*
    * setupFiles: É um array de arquivos que o Jest irá executar antes de executar seus testes na aplicação.
    * Utilizamos essa configuração aqui, para dizer ao jest que carregue o arquivo jestSetup do pacote react-native-gesture-handler para realizar
